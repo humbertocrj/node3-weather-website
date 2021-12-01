@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: blue;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    font-family:arial,sans-serif;
+    flex-direction: column;
+    
+}
+img{
+    width: 150px;
+    height: 180px;
+}
+.header{
+    position: relative;
+    height: 130px;
+    background: #eafafa;
+    display: flex;
+    align-items: center;
+}
+
+.header h1{
+   margin-left: 30px;
+   color: #444;
+   font-size: 2.5rem;
+}
+
+.navbar{
+    background: rgb(84, 84, 124);
+    height:50px;
+    width: 100%;
+    display:flex;
+}
+
+.navbar a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none ;
+    line-height: 50px;
+    padding: 0 30px;
+   
+    letter-spacing:1px;
+}
+
+.navbar a:hover{
+    background: rgb(74, 74, 114);
+}
+.content{
+    flex: auto;
+    display: flex;     
+    align-items: center;
+    margin-top:30px;
+    flex-direction: column;
+}
+
+.weather-search-form input[type="text"]{
+    padding: 10px;
+    width: 350px;
+    font-size: 1rem;
+}
+.weather-search-form button{
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#forecast{
+    width:500px;
+}
+#forecast p{
+    padding: 30px;
+}
+.footer{
+    text-align: center;
+    background: #eafafa;
+    height:20vh;
+    justify-self: flex-end;
+}
+
+.footer p{
+    line-height: 20vh;
+}
